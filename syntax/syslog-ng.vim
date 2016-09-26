@@ -10,7 +10,7 @@ syn clear
 syn case match
 set iskeyword=a-z,A-Z,48-57,_,-,.
 
-syn keyword sysngStatement	source destination filter log options
+syn keyword sysngStatement	source destination filter log options parser
 syn match sysngComment		"#.*$"
 syn match sysngString		+"[^"]*"+
 syn match sysngOctNumber	"\<0\o\+\>"
