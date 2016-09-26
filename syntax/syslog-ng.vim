@@ -22,6 +22,8 @@ syn match sysngIdentifier	"\<[sdf]_\+\>"
 syn keyword sysngDriver		internal remote_control
 syn keyword sysngDriver		file fifo pipe door
 syn keyword sysngDriver		udp tcp
+syn keyword sysngDriver		syslog network
+syn keyword sysngDriver		system systemd-journal
 syn keyword sysngDriver		sun_stream sun_streams sun-stream sun-streams
 syn keyword sysngDriver		unix_dgram unix_stream unix-dgram unix-stream
 syn keyword sysngDriver		usertty program
@@ -46,3 +48,5 @@ if !exists("did_sysng_syntax_inits")
 endif
 
 let b:current_syntax = "syslog-ng"
+
+" vim:ts=8
